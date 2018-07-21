@@ -44,16 +44,16 @@ class Coming_soon extends React.Component {
     })
   }
   scroll() {
-    let elem = document.documentElement || document.body
-    if(elem.scrollTop + window.innerHeight >= elem.scrollHeight) {
+    if(window.pageYOffset+ window.innerHeight >= document.documentElement.scrollHeight) {
       this.loadData()
     }
   }
   componentDidMount() {
     if(this.props.data.list.length === 0) {
       this.loadData()
-    }
-    window.addEventListener('scroll', this.scroll)    
+    }else {
+      window.addEventListener('scroll', this.scroll)  
+    }  
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scroll)

@@ -44,16 +44,16 @@ class In_theaters extends React.Component {
     })
   }
   scroll() {
-    let elem = document.documentElement || document.body
-    if(elem.scrollTop + window.innerHeight >= elem.scrollHeight) {
+    if(window.pageYOffset+ window.innerHeight >= document.documentElement.scrollHeight) {
       this.loadData()
     }
   }
   componentDidMount() {
     if(this.props.data.list.length === 0) {
       this.loadData()
+    }else {
+      window.addEventListener('scroll', this.scroll)  
     }
-    window.addEventListener('scroll', this.scroll)
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.scroll)
