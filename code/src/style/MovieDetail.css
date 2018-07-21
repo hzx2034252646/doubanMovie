@@ -1,0 +1,115 @@
+.bg {
+  width: 100%;
+  height: 3.5rem;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+}
+.wrapper {
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.wrapper img{
+  width: 2rem;
+  height: 2.8rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
+}
+
+.wrapper > div {
+  width: 4.8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  vertical-align: top
+}
+
+.wrapper > div > p:nth-child(1) {
+  font-size: 1.4em;
+}
+
+.wrapper > div > p{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.movie_rating {
+  display: inline-block;
+}
+
+.movie_rating > span{
+  font-size: 2em;
+}
+
+.movie_rating > div {
+  width: 2rem;
+  display: inline-block;
+}
+
+.movie_rating > div > p {
+  font-size: .8em;
+  color: #aaa;
+  text-align: center;
+}
+
+.info {
+  margin-top: .8rem;
+  padding: 0 .3rem;
+  color: #333;
+}
+
+.info > p {
+  line-height: 1.8em;
+}
+
+.info > p > span {
+  margin-right: .2rem;
+}
+
+.info > div {
+  display: flex;
+  justify-content: space-between;
+  height: .6rem;
+  margin: .5rem 0;
+}
+
+.info > div > span {
+  flex: 0.48;
+  color: #ffb712;
+  border-radius: .1rem;
+  border: 1px solid #ffb712;
+  height: 100%;
+  line-height: .6rem;
+  text-align: center;
+}
+
+.intro{
+  padding: 0 .3rem;
+}
+
+.intro > div {
+  color: #999;
+  margin-bottom: .3rem;
+}
+
+.intro > p {
+  color: #333;
+  line-height: 1.8em;
+}

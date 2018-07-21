@@ -1,0 +1,29 @@
+.rating {
+  text-align: center;
+}
+
+.rating_item {
+  width: .2rem;
+  height: .2rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: .2rem .2rem;
+  vertical-align: middle;
+  margin-left: .04rem;
+}
+
+.rating_star {
+  background-image: url('../image/star.png');
+}
+
+.rating_gray_star {
+  background-image: url('../image/gray_star.png');
+}
+
+.rating_num {
+  font-size: .8em;
+  font-family: Arial;
+  margin-left: .1rem;
+  color: #aaa;
+  vertical-align: middle;
+}
